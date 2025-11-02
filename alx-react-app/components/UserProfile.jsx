@@ -1,11 +1,17 @@
-const UserProfile = (props) => {
+import Header from './Header';
+import MainContent from './MainContent';
+import Footer from './Footer';
+import UserProfile from './components/UserProfile';
+
+function App() {
   return (
     <div>
-      <h2>{props.name}</h2>
-      <p>Age: {props.age}</p>
-      <p>Bio: {props.bio}</p>
+      <Header />
+      <MainContent />
+      <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
+      <Footer />
     </div>
   );
-};
+}
 
-export default UserProfile;
+export default App;
