@@ -1,35 +1,32 @@
-import { useEffect } from 'react';
-import useRecipeStore from '../recipeStore';
+// src/components/SearchBar.jsx
+
+import React from 'react';
+import useRecipeStore from '../store/useRecipeStore';
 
 const SearchBar = () => {
+  // Select the action from the store
   const setSearchTerm = useRecipeStore(state => state.setSearchTerm);
-  const filterRecipes = useRecipeStore(state => state.filterRecipes);
-
-  const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);
+  
+  const inputStyle = {
+    padding: '10px',
+    fontSize: '16px',
+    width: '100%',
+    maxWidth: '500px',
+    margin: '20px auto',
+    display: 'block',
+    borderRadius: '5px',
+    border: '1px solid #ccc',
   };
 
-  // Trigger filtering whenever the component renders
-  useEffect(() => {
-    filterRecipes();
-  });
-
   return (
-    <div style={{ marginBottom: '20px' }}>
-      <input
-        type="text"
-        placeholder="Search recipes by title or description..."
-        onChange={handleSearchChange}
-        style={{
-          width: '100%',
-          padding: '12px',
-          fontSize: '16px',
-          border: '2px solid #ddd',
-          borderRadius: '5px',
-          boxSizing: 'border-box'
-        }}
-      />
-    </div>
+    <input
+      style={inputStyle}
+      type="text"
+      placeholder="Search recipes by name or ingredient..."
+      // Debouncing is recommended for real apps, but for this task, 
+      // we update the state directly on change.
+      onChange={(e) => setSearchTerm(e.target.value)}
+    />
   );
 };
 
