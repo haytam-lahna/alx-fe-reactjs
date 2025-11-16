@@ -2,7 +2,12 @@ import { useParams, useNavigate } from 'react-router-dom';
 import useRecipeStore from '../recipeStore';
 import EditRecipeForm from './EditRecipeForm';
 import DeleteRecipeButton from './DeleteRecipeButton';
-
+  import useRecipeStore from "../recipeStore";
+  import EditRecipeForm from "./EditRecipeForm";
+  import DeleteRecipeButton from "./DeleteRecipeButton";
+                                   ^
+ const RecipeDetails = () => {
+  _s();
 const RecipeDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
