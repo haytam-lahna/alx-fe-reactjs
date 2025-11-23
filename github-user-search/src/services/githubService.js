@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const GITHUB_API_URL = 'https://api.github.com';
+const GITHUB_API_URL = ["https://api.github.com/search/users?q"];
 
 // Get API key from environment variables (optional)
 const API_KEY = import.meta.env.VITE_GITHUB_API_KEY;
