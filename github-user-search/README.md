@@ -1,16 +1,64 @@
-# React + Vite
+# GitHub User Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application for searching GitHub users with advanced filtering capabilities.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Deployed Application**: [Add your Vercel URL here]
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Search users by username
+- Filter by location
+- Filter by minimum repository count
+- Responsive design with Tailwind CSS
+- Pagination with "Load More" functionality
+- Real-time search results
+- Error handling and loading states
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18
+- Vite
+- Tailwind CSS
+- Axios
+- GitHub REST API
+- Vercel (Deployment)
+
+## 📦 Local Development
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## 🔑 Environment Variables (Optional)
+
+Add a GitHub Personal Access Token for higher API rate limits:
+```
+VITE_GITHUB_API_KEY=your_token_here
+```
+
+## 📱 Features Showcase
+
+- **Advanced Search**: Combine username, location, and repository filters
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
+- **Real-time Results**: Instant feedback with loading states
+- **User Cards**: Display avatar, username, location, repos, and followers
+- **External Links**: Direct links to GitHub profiles
+
+## 🚀 Deployment
+
+This application is deployed on Vercel with continuous deployment from the main branch.
+
+## 📄 License
+
+MIT License
