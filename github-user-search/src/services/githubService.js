@@ -11,24 +11,13 @@ const githubAPI = axios.create({
   headers: API_KEY ? { Authorization: `token ${API_KEY}` } : {}
 });
 
-// Function to search for GitHub users
-export const searchUsers = async (username) => {
-  try {
-    const response = await githubAPI.get(`/search/users?q=${username}`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching users:', error);
-    throw error;
-  }
-};
-
-// Function to get user details
-export const getUserDetails = async (username) => {
+// Function to fetch user data by username
+export const fetchUserData = async (username) => {
   try {
     const response = await githubAPI.get(`/users/${username}`);
     return response.data;
   } catch (error) {
-    console.error('Error fetching user details:', error);
+    console.error('Error fetching user data:', error);
     throw error;
   }
 };
