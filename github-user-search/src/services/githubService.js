@@ -22,4 +22,30 @@ export const fetchUserData = async (username) => {
   }
 };
 
+// Function to perform advanced search with multiple criteria
+export const searchUsers = async (searchParams) => {
+  try {
+    // Build query string from search parameters
+    let query = '';
+    
+    if (searchParams.username) {
+      query += searchParams.username;
+    }
+    
+    if (searchParams.location) {
+      query += `${query ? '+' : ''}location:${searchParams.location}`;
+    }
+    
+    if (searchParams.minRepos) {
+      query += `${query ? '+' : ''}repos:>=${searchParams.minRepos}`;
+    }
+
+    const response = await githubAPI.get(`/search/users?q=${query}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error searching users:', error);
+    throw error;
+  }
+};
+
 export default githubAPI;

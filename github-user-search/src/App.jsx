@@ -1,30 +1,21 @@
 import Search from './components/Search';
-import './App.css';
+import './index.css';
 
 function App() {
   return (
-    <div className="App" style={{
-      maxWidth: '800px',
-      margin: '0 auto',
-      padding: '40px 20px',
-      textAlign: 'center'
-    }}>
-      <h1 style={{ 
-        color: '#0366d6',
-        marginBottom: '10px',
-        fontSize: '2.5rem'
-      }}>
-        GitHub User Search
-      </h1>
-      <p style={{ 
-        color: '#666',
-        marginBottom: '40px',
-        fontSize: '1.1rem'
-      }}>
-        Search for GitHub users and view their profiles
-      </p>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <h1 className="text-5xl font-bold text-gray-800 mb-4">
+            GitHub User Search
+          </h1>
+          <p className="text-xl text-gray-600">
+            Discover GitHub users with advanced search filters
+          </p>
+        </div>
 
-      <Search />
+        <Search />
+      </div>
     </div>
   );
 }
