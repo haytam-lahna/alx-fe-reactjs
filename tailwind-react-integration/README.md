@@ -75,3 +75,35 @@ Use browser DevTools to test responsiveness at different viewport sizes:
 # Tablet: 768px
 # Desktop: 1024px+
 ```
+
+## 🎨 Interactive Features
+
+The UserProfile component includes sophisticated hover effects and smooth transitions:
+
+### Hover Effects:
+1. **Image Scale Effect**
+   - Smoothly scales to 110% on hover
+   - Creates an engaging zoom effect
+   - Uses `hover:scale-110` with smooth transitions
+
+2. **Heading Color Change**
+   - Changes from dark blue to lighter blue on hover
+   - Indicates interactivity
+   - Uses `hover:text-blue-500` with color transitions
+
+3. **Card Shadow Enhancement**
+   - Shadow increases on hover creating a "lift" effect
+   - Makes the entire card feel interactive
+   - Uses `hover:shadow-xl` with shadow transitions
+
+### Transition Details:
+- **Duration**: 300ms for all animations
+- **Easing**: `ease-in-out` for natural movement
+- **Properties**: Transform, colors, and shadows
+- **Performance**: Hardware-accelerated CSS transitions
+
+### Testing Interactivity:
+1. Hover over the profile image to see the zoom effect
+2. Hover over the name to see the color change
+3. Hover anywhere on the card to see the lift effect
+4. All transitions are smooth and responsive
