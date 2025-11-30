@@ -24,7 +24,7 @@ function App() {
           <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
             <li className="flex items-start">
               <span className="text-blue-500 mr-2">✓</span>
-              <span><strong>Mobile (< 640px):</strong> Compact layout with p-4 padding, text-lg heading, and 96px image</span>
+              <span><strong>Mobile (under 640px):</strong> Compact layout with p-4 padding, text-lg heading, and 96px image</span>
             </li>
             <li className="flex items-start">
               <span className="text-blue-500 mr-2">✓</span>
@@ -32,7 +32,7 @@ function App() {
             </li>
             <li className="flex items-start">
               <span className="text-blue-500 mr-2">✓</span>
-              <span><strong>Desktop (≥ 768px):</strong> Spacious layout with p-8 padding, text-2xl heading, and 144px image</span>
+              <span><strong>Desktop (768px and above):</strong> Spacious layout with p-8 padding, text-2xl heading, and 144px image</span>
             </li>
           </ul>
         </div>
