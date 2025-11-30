@@ -1,6 +1,6 @@
 # Tailwind CSS + React Integration
 
-This project demonstrates the integration of Tailwind CSS with a React application using Vite.
+This project demonstrates the integration of Tailwind CSS with a React application using Vite, featuring a styled UserProfile component.
 
 ## 🚀 Getting Started
 
@@ -26,32 +26,25 @@ npm run build
 - Tailwind CSS v4
 - @tailwindcss/vite plugin
 
-## 🎨 Tailwind Configuration
+## 🎨 Components
 
-Tailwind CSS is configured through the Vite plugin in `vite.config.js`:
-```javascript
-import tailwindcss from '@tailwindcss/vite'
+### UserProfile Component
 
-export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
-})
-```
+Located in `src/components/UserProfile.jsx`, this component demonstrates:
 
-The Tailwind directives are imported in `src/index.css`:
-```css
-@import "tailwindcss";
-```
+- **Container Styling**: Gray background, padding, rounded corners, shadow
+- **Circular Image**: 150px diameter profile picture
+- **Typography**: Styled heading and description text
+- **Responsive Design**: Centered layout with proper spacing
+- **Utility-First Approach**: All styling done with Tailwind CSS utility classes
 
-## ✨ Features
-
-- Utility-first CSS framework
-- Fast development with hot module replacement
-- Optimized production builds
-- No configuration files needed (Tailwind v4)
-- Modern CSS features
+#### Styling Features:
+- Cool gray background (`bg-gray-100`)
+- Card layout with shadow and rounded corners
+- Circular profile image
+- Deep blue heading (`text-blue-800`)
+- Gray description text (`text-gray-600`)
+- Proper spacing and centering
 
 ## 📚 Learn More
 
