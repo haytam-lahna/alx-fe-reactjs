@@ -51,3 +51,27 @@ Located in `src/components/UserProfile.jsx`, this component demonstrates:
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Vite Documentation](https://vitejs.dev/)
 - [React Documentation](https://react.dev/)
+
+## 📱 Responsive Design
+
+The UserProfile component is fully responsive and adapts to different screen sizes:
+
+### Breakpoints:
+- **Mobile** (< 640px): Compact design optimized for small screens
+- **Tablet** (640px - 767px): Medium-sized elements with comfortable spacing
+- **Desktop** (≥ 768px): Spacious layout with larger elements
+
+### Responsive Features:
+- **Adaptive Padding**: Increases from p-4 to p-8 as screen size grows
+- **Scalable Typography**: Heading and text sizes adjust for readability
+- **Flexible Images**: Profile images scale from 96px to 144px
+- **Smart Container Width**: Adjusts from max-w-xs to max-w-md
+- **Smooth Transitions**: Hover effects for enhanced interactivity
+
+### Testing:
+Use browser DevTools to test responsiveness at different viewport sizes:
+```bash
+# Mobile: 375px
+# Tablet: 768px
+# Desktop: 1024px+
+```
