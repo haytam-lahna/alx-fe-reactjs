@@ -3,48 +3,208 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "400g spaghetti",
+      "200g pancetta or bacon",
+      "4 large eggs",
+      "100g Parmesan cheese, grated",
+      "Black pepper to taste",
+      "Salt for pasta water"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to boil and cook spaghetti according to package directions.",
+      "While pasta cooks, fry pancetta in a large skillet until crispy.",
+      "In a bowl, whisk together eggs, Parmesan, and black pepper.",
+      "Drain pasta, reserving 1 cup of pasta water.",
+      "Add hot pasta to the skillet with pancetta, remove from heat.",
+      "Quickly stir in egg mixture, adding pasta water to create a creamy sauce.",
+      "Serve immediately with extra Parmesan and black pepper."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "500g chicken breast, cubed",
+      "1 cup yogurt",
+      "2 tbsp tikka masala spice",
+      "400g crushed tomatoes",
+      "200ml heavy cream",
+      "1 onion, diced",
+      "3 cloves garlic, minced",
+      "1 inch ginger, grated",
+      "2 tbsp butter",
+      "Fresh cilantro for garnish"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt and half the tikka masala spice for at least 1 hour.",
+      "Grill or pan-fry marinated chicken until cooked through.",
+      "In a large pan, melt butter and sauté onion until soft.",
+      "Add garlic and ginger, cook for 1 minute.",
+      "Add remaining spices and cook until fragrant.",
+      "Pour in crushed tomatoes and simmer for 10 minutes.",
+      "Add cream and cooked chicken, simmer for 5 more minutes.",
+      "Garnish with cilantro and serve with rice or naan."
+    ]
   },
   {
     "id": 3,
     "title": "Caesar Salad",
     "summary": "Fresh romaine lettuce with parmesan cheese, croutons, and creamy Caesar dressing.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "1 large head romaine lettuce",
+      "1 cup croutons",
+      "1/2 cup Parmesan cheese, shaved",
+      "1/4 cup Caesar dressing",
+      "2 cloves garlic",
+      "2 anchovy fillets",
+      "1 egg yolk",
+      "1 tbsp Dijon mustard",
+      "Juice of 1 lemon"
+    ],
+    "instructions": [
+      "Wash and chop romaine lettuce into bite-sized pieces.",
+      "Make dressing: blend garlic, anchovies, egg yolk, mustard, and lemon juice.",
+      "Slowly drizzle in olive oil while blending until creamy.",
+      "In a large bowl, toss lettuce with dressing.",
+      "Add croutons and toss gently.",
+      "Top with shaved Parmesan cheese.",
+      "Serve immediately."
+    ]
   },
   {
     "id": 4,
     "title": "Beef Tacos",
     "summary": "Seasoned ground beef in crispy taco shells with lettuce, cheese, and salsa.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "500g ground beef",
+      "1 packet taco seasoning",
+      "8 taco shells",
+      "2 cups lettuce, shredded",
+      "1 cup cheddar cheese, shredded",
+      "1 cup salsa",
+      "1/2 cup sour cream",
+      "1 tomato, diced",
+      "1/2 onion, diced"
+    ],
+    "instructions": [
+      "Brown ground beef in a large skillet over medium-high heat.",
+      "Drain excess fat and add taco seasoning with water as directed.",
+      "Simmer until sauce thickens.",
+      "Warm taco shells according to package directions.",
+      "Fill each shell with seasoned beef.",
+      "Top with lettuce, cheese, salsa, sour cream, tomatoes, and onions.",
+      "Serve immediately with lime wedges."
+    ]
   },
   {
     "id": 5,
     "title": "Vegetable Stir Fry",
     "summary": "A colorful mix of fresh vegetables stir-fried with soy sauce and ginger.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "2 cups broccoli florets",
+      "1 red bell pepper, sliced",
+      "1 cup snap peas",
+      "2 carrots, julienned",
+      "3 tbsp soy sauce",
+      "2 tbsp vegetable oil",
+      "2 cloves garlic, minced",
+      "1 inch ginger, grated",
+      "1 tbsp sesame oil",
+      "Sesame seeds for garnish"
+    ],
+    "instructions": [
+      "Heat vegetable oil in a large wok or skillet over high heat.",
+      "Add garlic and ginger, stir-fry for 30 seconds.",
+      "Add broccoli and carrots, stir-fry for 3 minutes.",
+      "Add bell pepper and snap peas, continue stir-frying for 2 minutes.",
+      "Pour in soy sauce and sesame oil, toss to coat.",
+      "Cook until vegetables are tender-crisp.",
+      "Garnish with sesame seeds and serve over rice."
+    ]
   },
   {
     "id": 6,
     "title": "Chocolate Chip Cookies",
     "summary": "Soft and chewy cookies loaded with chocolate chips and baked to perfection.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "2 1/4 cups all-purpose flour",
+      "1 cup butter, softened",
+      "3/4 cup brown sugar",
+      "3/4 cup white sugar",
+      "2 eggs",
+      "2 tsp vanilla extract",
+      "1 tsp baking soda",
+      "1 tsp salt",
+      "2 cups chocolate chips"
+    ],
+    "instructions": [
+      "Preheat oven to 375°F (190°C).",
+      "Cream together butter and both sugars until fluffy.",
+      "Beat in eggs and vanilla extract.",
+      "In a separate bowl, combine flour, baking soda, and salt.",
+      "Gradually blend dry ingredients into wet ingredients.",
+      "Stir in chocolate chips.",
+      "Drop rounded tablespoons of dough onto ungreased cookie sheets.",
+      "Bake for 9-11 minutes until golden brown.",
+      "Cool on baking sheet for 2 minutes before transferring to wire rack."
+    ]
   },
   {
     "id": 7,
     "title": "Margherita Pizza",
     "summary": "Traditional Italian pizza with tomato sauce, mozzarella, and fresh basil.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "Pizza dough (homemade or store-bought)",
+      "1 cup tomato sauce",
+      "250g fresh mozzarella, sliced",
+      "Fresh basil leaves",
+      "2 tbsp olive oil",
+      "Salt to taste",
+      "Garlic powder (optional)"
+    ],
+    "instructions": [
+      "Preheat oven to 475°F (245°C) with pizza stone if available.",
+      "Roll out pizza dough to desired thickness.",
+      "Spread tomato sauce evenly over dough, leaving a border for crust.",
+      "Arrange mozzarella slices over sauce.",
+      "Drizzle with olive oil and sprinkle with salt.",
+      "Bake for 10-12 minutes until crust is golden and cheese is bubbly.",
+      "Remove from oven and top with fresh basil leaves.",
+      "Slice and serve hot."
+    ]
   },
   {
     "id": 8,
     "title": "Greek Salad",
     "summary": "Fresh cucumbers, tomatoes, olives, and feta cheese with olive oil and herbs.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "2 large cucumbers, diced",
+      "4 tomatoes, cut into wedges",
+      "1 red onion, thinly sliced",
+      "1 cup Kalamata olives",
+      "200g feta cheese, cubed",
+      "1/4 cup olive oil",
+      "2 tbsp red wine vinegar",
+      "1 tsp dried oregano",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "In a large bowl, combine cucumbers, tomatoes, onion, and olives.",
+      "In a small bowl, whisk together olive oil, vinegar, oregano, salt, and pepper.",
+      "Pour dressing over vegetables and toss gently.",
+      "Add feta cheese cubes on top.",
+      "Let salad marinate for 10-15 minutes before serving.",
+      "Serve chilled or at room temperature."
+    ]
   }
 ]
