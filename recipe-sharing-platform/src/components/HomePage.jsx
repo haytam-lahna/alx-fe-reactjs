@@ -13,12 +13,22 @@ function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50">
       <header className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-6">
-          <h1 className="text-4xl font-bold text-orange-600">
-            Recipe Sharing Platform
-          </h1>
-          <p className="text-gray-600 mt-2">
-            Discover and share amazing recipes from around the world
-          </p>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+              <h1 className="text-4xl font-bold text-orange-600">
+                Recipe Sharing Platform
+              </h1>
+              <p className="text-gray-600 mt-2">
+                Discover and share amazing recipes from around the world
+              </p>
+            </div>
+            <Link
+              to="/add-recipe"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-lg transition-colors duration-200 whitespace-nowrap"
+            >
+              + Add Recipe
+            </Link>
+          </div>
         </div>
       </header>
 
