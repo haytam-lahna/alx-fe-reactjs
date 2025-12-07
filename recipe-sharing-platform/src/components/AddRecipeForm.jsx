@@ -10,7 +10,6 @@ function AddRecipeForm() {
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
 
-  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -18,7 +17,6 @@ function AddRecipeForm() {
       [name]: value
     });
     
-    // Clear error for this field when user starts typing
     if (errors[name]) {
       setErrors({
         ...errors,
@@ -27,18 +25,15 @@ function AddRecipeForm() {
     }
   };
 
-  // Validate form
   const validate = () => {
     const newErrors = {};
 
-    // Validate title
     if (!formData.title.trim()) {
       newErrors.title = 'Recipe title is required';
     } else if (formData.title.trim().length < 3) {
       newErrors.title = 'Recipe title must be at least 3 characters';
     }
 
-    // Validate ingredients
     if (!formData.ingredients.trim()) {
       newErrors.ingredients = 'Ingredients are required';
     } else {
@@ -48,7 +43,6 @@ function AddRecipeForm() {
       }
     }
 
-    // Validate steps
     if (!formData.steps.trim()) {
       newErrors.steps = 'Preparation steps are required';
     } else if (formData.steps.trim().length < 10) {
@@ -58,18 +52,15 @@ function AddRecipeForm() {
     return newErrors;
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const newErrors = validate();
 
     if (Object.keys(newErrors).length === 0) {
-      // Form is valid, submit data
       console.log('Form submitted:', formData);
       setSubmitted(true);
 
-      // Reset form after successful submission
       setTimeout(() => {
         setFormData({
           title: '',
@@ -79,7 +70,6 @@ function AddRecipeForm() {
         setSubmitted(false);
       }, 3000);
     } else {
-      // Form has errors
       setErrors(newErrors);
     }
   };
@@ -87,22 +77,18 @@ function AddRecipeForm() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 py-12 px-4">
       <div className="max-w-3xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">Add New Recipe</h1>
           <p className="text-gray-600">Share your culinary creations with the community</p>
         </div>
 
-        {/* Success Message */}
         {submitted && (
           <div className="mb-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg animate-pulse">
             <p className="font-semibold">✓ Recipe submitted successfully!</p>
           </div>
         )}
 
-        {/* Form */}
         <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-8">
-          {/* Recipe Title */}
           <div className="mb-6">
             <label htmlFor="title" className="block text-gray-700 font-semibold mb-2">
               Recipe Title <span className="text-red-500">*</span>
@@ -130,7 +116,6 @@ function AddRecipeForm() {
             )}
           </div>
 
-          {/* Ingredients */}
           <div className="mb-6">
             <label htmlFor="ingredients" className="block text-gray-700 font-semibold mb-2">
               Ingredients <span className="text-red-500">*</span>
@@ -146,7 +131,7 @@ function AddRecipeForm() {
                   ? 'border-red-500 focus:ring-red-500'
                   : 'border-gray-300 focus:ring-orange-500'
               }`}
-              placeholder="Enter each ingredient on a new line:&#10;2 cups flour&#10;1 cup sugar&#10;3 eggs"
+              placeholder="Enter each ingredient on a new line"
             />
             <p className="mt-1 text-sm text-gray-500">
               Enter one ingredient per line (minimum 2 ingredients)
@@ -161,7 +146,6 @@ function AddRecipeForm() {
             )}
           </div>
 
-          {/* Preparation Steps */}
           <div className="mb-8">
             <label htmlFor="steps" className="block text-gray-700 font-semibold mb-2">
               Preparation Steps <span className="text-red-500">*</span>
@@ -189,7 +173,6 @@ function AddRecipeForm() {
             )}
           </div>
 
-          {/* Submit Button */}
           <div className="flex flex-col sm:flex-row gap-4">
             <button
               type="submit"
@@ -210,7 +193,6 @@ function AddRecipeForm() {
           </div>
         </form>
 
-        {/* Tips Section */}
         <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
           <h3 className="text-lg font-bold text-blue-900 mb-3">📝 Tips for a Great Recipe</h3>
           <ul className="space-y-2 text-sm text-blue-800">
