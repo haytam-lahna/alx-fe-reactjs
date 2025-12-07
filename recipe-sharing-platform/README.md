@@ -95,3 +95,40 @@ recipe-sharing-platform/
 ## 📄 License
 
 MIT License
+
+## 🏠 Home Page Features
+
+The Home Page displays a responsive grid of recipe cards with the following features:
+
+### Recipe Cards
+- **Image Display**: High-quality recipe images
+- **Title**: Bold, eye-catching recipe names
+- **Summary**: Brief description of each recipe
+- **Interactive Button**: "View Recipe" call-to-action
+
+### Responsive Grid Layout
+- **Mobile**: Single column layout
+- **Tablet**: Two columns (≥640px)
+- **Desktop**: Three columns (≥1024px)
+- **Large Desktop**: Four columns (≥1280px)
+
+### Hover Effects
+- Shadow enhancement (creates depth)
+- Subtle scale-up animation
+- Title color change
+- Button color transition
+
+### Data Management
+- Mock data loaded from `data.json`
+- React hooks for state management
+- Easy to integrate with real API
+
+## 📁 File Structure
+```
+src/
+├── components/
+│   └── HomePage.jsx
+├── data.json
+├── App.jsx
+└── index.css
+```
