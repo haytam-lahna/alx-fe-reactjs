@@ -18,6 +18,12 @@ function PostsComponent() {
   } = useQuery({
     queryKey: ["posts"],
     queryFn: fetchPosts,
+
+    // React Query advanced options
+    cacheTime: 1000 * 60 * 5,          // 5 minutes
+    staleTime: 1000 * 30,              // 30 seconds
+    refetchOnWindowFocus: false,
+    keepPreviousData: true,
   });
 
   if (isLoading) {
